@@ -1,0 +1,40 @@
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--space-10x));
+}
+
+[data-frame] {
+  display: grid;
+  grid-template-columns: var(--data-frame-column-count);
+  grid-template-rows: var(--data-frame-row-count);
+  column-gap: var(--data-frame-column-gap);
+  row-gap: var(--data-frame-row-gap);
+
+  > * {
+    grid-column: var(--data-frame-child-column);
+    grid-row: var(--data-frame-child-row);
+  }
+}
+
+[data-frame-column-count="3"] {
+  --data-frame-column-count: repeat(3, 1fr);
+
+  &[data-frame-collapse-after=medium] {
+    --data-frame-column-count: 1fr;
+
+    @media (--viewport-medium+) {
+      --data-frame-column-count: repeat(3, 1fr);
+    }
+  }
+}
+
+[data-viewport=under-medium] {
+  display: var(--data-viewport-display, block);
+
+  @media (width >= 720px) {
+    display: none;
+  }
+}
+
+.fw-semibold {
+  font-weight: 600;
+}

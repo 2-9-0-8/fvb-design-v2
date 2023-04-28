@@ -1,0 +1,44 @@
+.Icon {
+  block-size: var(--Icon-block);
+  inline-size: var(--Icon-inline);
+
+  &[data-size=parent] {
+    --Icon-block: 100%;
+    --Icon-inline: 100%;
+  }
+
+  &[data-size="10"] {
+    --Icon-block: 10px;
+    --Icon-inline: 10px;
+  }
+
+  &[data-size="12"] {
+    --Icon-block: 12px;
+    --Icon-inline: 12px;
+  }
+
+  &[data-size="16"] {
+    --Icon-block: 16px;
+    --Icon-inline: 16px;
+  }
+
+  &[data-size="18"] {
+    --Icon-block: 18px;
+    --Icon-inline: 18px;
+  }
+
+  &[data-size="20"] {
+    --Icon-block: 20px;
+    --Icon-inline: 20px;
+  }
+
+  &[data-size="24"] {
+    --Icon-block: 24px;
+    --Icon-inline: 24px;
+  }
+
+  &[data-size="136"] {
+    --Icon-block: 136px;
+    --Icon-inline: 136px;
+  }
+}

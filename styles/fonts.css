@@ -1,0 +1,11 @@
+@font-face {
+  font-display: swap;
+  font-family: 'ClashDisplay-Variable';
+  font-style: normal;
+  font-weight: 200 700;
+  src: 
+    url('/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('/fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('/fonts/ClashDisplay-Variable.ttf') format('truetype');
+}
+   

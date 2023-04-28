@@ -1,0 +1,19 @@
+.GlobalVar {
+  --Header__logo-block____GlobalVar: 38.4px;
+  --Header__logo-inline____GlobalVar: 42.24px;
+
+  @media (width >= 480px) {
+    --Header__logo-block____GlobalVar: 48px;
+    --Header__logo-inline____GlobalVar: 52.8px;
+  }
+
+  @media (width >= 720px) {
+    --Header__logo-block____GlobalVar: 62.4px;
+    --Header__logo-inline____GlobalVar: 68.64px;
+  }
+
+  @media (width >= 1024px) {
+    --Header__logo-block____GlobalVar: 80.8px;
+    --Header__logo-inline____GlobalVar: 88px;
+  }
+}

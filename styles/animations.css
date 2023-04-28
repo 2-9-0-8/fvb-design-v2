@@ -1,0 +1,14 @@
+[data-animate] {
+  --duration: 1.5s;
+  --opacity: 0;
+  --transform: translateY(5px);
+
+  opacity: var(--opacity);
+  transform: var(--transform);
+  transition: opacity var(--duration) ease-in-out var(--delay), transform var(--duration) ease-in-out var(--delay);
+}
+
+[data-animating] {
+  --opacity: 1;
+  --transform: translateY(0);
+}

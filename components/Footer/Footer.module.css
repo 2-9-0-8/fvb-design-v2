@@ -1,0 +1,14 @@
+.Footer {
+  border-block-start: var(--phat-stroke) solid var(--fvb-neutral-black);
+  line-height: 1;
+  margin: calc(var(--space-6x) + (var(--Header__logo-block____GlobalVar) / 2)) 0 var(--space-12x) 0;
+  padding: var(--space-8x) 0 0 0;
+}
+
+.Footer__list {
+  font-weight: 500;
+
+  > li + li {
+    margin: var(--space-2x) 0 0 0;
+  }
+}

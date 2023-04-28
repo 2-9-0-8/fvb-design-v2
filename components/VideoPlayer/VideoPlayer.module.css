@@ -1,0 +1,30 @@
+.VideoPlayerContainer {
+  display: grid;
+  grid-template: [row-start] 1fr [row-end] / [col-start] 1fr [col-end];
+  inline-size: 100%;
+
+  > * {
+    grid-area: row-start / col-start / row-end / col-end;
+  }
+}
+
+.VideoPlayer {
+}
+
+.VideoPlayerControls {
+  position: relative;
+  z-index: var(--stack-order-lowest);
+}
+
+.VideoPlayerControls__play {
+  aspect-ratio: 1 / 1;
+  inline-size: min(104px, 15%);
+  inset: 50% auto auto 50%;
+  position: absolute;
+  translate: -50% -50%;
+}
+
+.VideoPlayerError {
+  color: var(--fvb-neutral-white);
+  text-align: center;
+}

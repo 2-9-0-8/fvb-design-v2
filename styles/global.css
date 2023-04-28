@@ -1,0 +1,83 @@
+:root {
+  --font-sans: 'ClashDisplay-Variable', ui-sans-serif, system-ui;
+
+  --fvb-neutral-white: #FFFFFF;
+  --fvb-neutral-grey-light: #F0F0F0;
+  --fvb-neutral-black: #0F0F0F;
+  --fvb-energy-orange: #FF3A00;
+
+  --space: 4px;
+  --space-2x: calc(2 * var(--space));
+  --space-3x: calc(3 * var(--space));
+  --space-4x: calc(4 * var(--space));
+  --space-6x: calc(6 * var(--space));
+  --space-8x: calc(8 * var(--space));
+  --space-10x: calc(10 * var(--space));
+  --space-12x: calc(12 * var(--space));
+  --space-16x: calc(16 * var(--space));
+  --space-18x: calc(18 * var(--space));
+  --space-20x: calc(20 * var(--space));
+  --space-24x: calc(24 * var(--space));
+  --space-28x: calc(28 * var(--space));
+  --space-32x: calc(32 * var(--space));
+  --space-40x: calc(40 * var(--space));
+  --space-46x: calc(46 * var(--space));
+  --space-48x: calc(48 * var(--space));
+  --space-64x: calc(64 * var(--space));
+  --space-2x-negative: calc(-2 * var(--space));
+  --space-3x-negative: calc(-3 * var(--space));
+  --space-4x-negative: calc(-4 * var(--space));
+  --space-6x-negative: calc(-6 * var(--space));
+  --space-8x-negative: calc(-8 * var(--space));
+  --space-10x-negative: calc(-10 * var(--space));
+  --space-12x-negative: calc(-12 * var(--space));
+  --space-16x-negative: calc(-16 * var(--space));
+  --space-18x-negative: calc(-18 * var(--space));
+  --space-20x-negative: calc(-20 * var(--space));
+  --space-24x-negative: calc(-24 * var(--space));
+  --space-28x-negative: calc(-28 * var(--space));
+  --space-32x-negative: calc(-32 * var(--space));
+  --space-40x-negative: calc(-40 * var(--space));
+  --space-46x-negative: calc(-46 * var(--space));
+  --space-48x-negative: calc(-48 * var(--space));
+  --space-64x-negative: calc(-64 * var(--space));
+
+  --stack-order-underworld: -1;
+  --stack-order-lowest: 1;
+  --stack-order-lower: 10;
+  --stack-order-low: 25;
+  --stack-order-medium: 50;
+  --stack-order-high: 100;
+  --stack-order-higher: 500;
+  --stack-order-highest: 1000;
+
+  --base-background: var(--fvb-neutral-grey-light);
+  --base-font-colour: var(--fvb-neutral-black);
+  --base-font-size: 1rem;
+  
+  --phat-stroke: 2px;
+}
+
+body {
+  background-color: var(--base-background);
+  color: var(--base-font-colour);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: var(--base-font-size);
+}
+
+main {
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+}
+
+:where(a) {
+  text-decoration: 1.5px solid underline var(--fvb-neutral-black);
+  text-underline-offset: .15em;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}

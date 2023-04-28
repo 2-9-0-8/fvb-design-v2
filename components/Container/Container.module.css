@@ -1,0 +1,24 @@
+.Container {
+  --Container-padding-block: 0;
+  --Container-padding-inline: var(--space-4x);
+  --Container-padding: var(--Container-padding-block) var(--Container-padding-inline);
+
+  @media (--viewport-medium+) {
+    --Container-padding-block: 0;
+    --Container-padding-inline: var(--space-6x);
+  }
+
+  inline-size: 100%;
+  margin: 0 auto;
+  max-inline-size: var(--Container-max-inline, 900px);
+  padding: var(--Container-padding);
+}
+
+.Container--grow {
+  flex-grow: 1;
+}
+
+.Container--allow-children-to-grow {
+  display: flex;
+  flex-direction: column;
+}
