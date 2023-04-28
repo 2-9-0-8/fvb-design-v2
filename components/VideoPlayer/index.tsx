@@ -4,7 +4,7 @@ import { CONTACT_EMAIL } from '@/utils/lib/constants'
 
 import Icon from '@/components/Icon'
 import styles from '@/components/VideoPlayer/VideoPlayer.module.css'
-import useCombinedRefs from '@/utils/hooks/useCombinedRefs'
+import useCombinedRefs from '@/utils/hooks/use-combined-refs'
 
 type Props = {
   id: string

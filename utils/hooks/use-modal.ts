@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { selectors } from '@/utils/lib/selectors'
-import useLock from '@/utils/hooks/useLock'
+import useLock from '@/utils/hooks/use-lock'
 
 type Props = {
   ref: React.RefObject<HTMLElement>

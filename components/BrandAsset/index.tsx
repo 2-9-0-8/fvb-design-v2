@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import useColourValue from '@/utils/hooks/useColourValue'
-import type { ColourValues, TintValues } from '@/utils/hooks/useColourValue'
+import useColourValue from '@/utils/hooks/use-colour-value'
+import type { ColourValues, TintValues } from '@/utils/hooks/use-colour-value'
 import styles from '@/components/BrandAsset/BrandAsset.module.css'
 
 type BrandAssets = ['Logo']
